@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-native-socketio",
+  "version": "1.0.0",
+  "description": "Cordova plugin to deal with native Socket.IO",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IllusionVK/cordova-plugin-native-socketio.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "app",
+    "version",
+    "appversion",
+    "plugin"
+  ],
+  "author": "IllusionVK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IllusionVK/cordova-plugin-native-socketio/issues"
+  },
+  "homepage": "https://github.com/IllusionVK/cordova-plugin-native-socketio#readme"
+}

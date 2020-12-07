@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-native-socketio"
+    version="1.0.0">
+
+    <name>Native Socket.IO</name>
+    <description></description>
+    <license>MIT</license>
+
+    <engines>
+      <engine name="cordova" version=">=7.1.0"/>
+      <engine name="cordova-android" version=">=7.1.0"/>
+      <engine name="cordova-ios" version=">=4.5.0"/>
+    </engines>
+
+    <js-module src="www/nativeSocketIO.js" name="NativeSocketIO">
+       <clobbers target="cordova.plugins.nativeSocketIO" />
+    </js-module>
+
+    <!-- android -->
+    <!-- <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NativeSocketIOPlugin">
+                <param name="android-package" value="cb.cordova.NativeSocketIOPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/NativeSocketIOPlugin.java" target-dir="src/cb/cordova" />
+    </platform> -->
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NativeSocketIO">
+                <param name="ios-package" value="NativeSocketIO" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/NativeSocketIO.swift" />
+        <framework src="Socket.IO-Client-Swift" type="podspec" spec="~> 15.2.0"/>
+    </platform>
+</plugin>
